@@ -528,3 +528,99 @@ footer{
     }
 
 }
+/* ============================= */
+/* RESPONSIVE MOBILE (PERBAIKAN) */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* 1. NAVIGASI */
+    .navbar {
+        padding: 15px 20px; /* Kurangi padding kiri-kanan */
+        flex-direction: column; /* Logo di atas, menu di bawah */
+        background: white;
+        height: auto; /* Biarkan tinggi menyesuaikan isi */
+    }
+
+    .brand {
+        margin-bottom: 15px; /* Jarak antara logo dan menu */
+        width: 100%;
+        justify-content: center; /* Logo di tengah */
+    }
+
+    .nav-links {
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap; /* Agar menu turun ke bawah jika sempit */
+        padding-bottom: 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem; /* Perkecil ukuran font menu */
+    }
+
+    /* 2. HERO SECTION */
+    header {
+        height: auto; /* Jangan paksa 100vh di HP */
+        min-height: 80vh;
+        padding-top: 140px; /* Tambah jarak atas karena navbar jadi tinggi */
+        padding-bottom: 60px;
+        background-attachment: scroll; /* Matikan parallax di HP agar ringan */
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem; /* Judul lebih kecil */
+    }
+
+    .hero-text p {
+        padding: 0 20px; /* Jarak teks agar tidak mepet layar */
+    }
+
+    /* 3. IDENTITY BOX (Jam Buka, dll) */
+    .identity {
+        flex-direction: column; /* Susun ke bawah */
+        margin-top: 0; /* Hapus margin negatif */
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .identity-box {
+        width: 100%; /* Lebar penuh */
+        padding: 20px;
+    }
+
+    /* 4. SECTION UMUM */
+    .section {
+        padding: 60px 20px; /* Kurangi padding vertikal */
+    }
+
+    /* 5. EXPERIENCE GRID */
+    .experience-grid {
+        grid-template-columns: 1fr; /* 1 Kolom ke bawah */
+        gap: 20px;
+    }
+
+    /* 6. LOKASI */
+    .location-container {
+        flex-direction: column; /* Peta di bawah teks */
+        gap: 40px;
+    }
+
+    .location-map iframe {
+        height: 300px; /* Tinggi peta disesuaikan */
+    }
+
+    /* 7. CHATBOT */
+    .chat-container {
+        width: 90%; /* Lebar menyesuaikan layar HP */
+        right: 5%; /* Posisi tengah */
+        bottom: 80px;
+        height: 60vh; /* Tinggi 60% layar */
+    }
+    
+    .chat-icon {
+        bottom: 20px;
+        right: 20px;
+    }
+}
