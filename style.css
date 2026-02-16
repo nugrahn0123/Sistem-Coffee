@@ -528,3 +528,18 @@ footer{
     }
 
 }
+@media (max-width: 480px){
+
+    .brand-text h1{
+        font-size:1rem;
+    }
+
+    .brand-text span{
+        font-size:0.65rem;
+    }
+
+    .nav-links{
+        font-size:0.9rem;
+    }
+
+}
