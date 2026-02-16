@@ -472,3 +472,59 @@ footer{
 .btn-map:hover{
     background:#1e3a5f;
 }
+/* ============================= */
+/* RESPONSIVE MOBILE FIX */
+/* ============================= */
+
+@media (max-width: 768px){
+
+    /* NAVBAR */
+    .navbar{
+        padding:15px 20px;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    /* HERO */
+    header{
+        padding:100px 20px 60px;
+        height:auto;
+    }
+
+    .hero-text h1{
+        font-size:2.2rem;
+    }
+
+    /* EXPERIENCE GRID */
+    .experience-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* LOCATION */
+    .location-container{
+        flex-direction:column;
+        gap:40px;
+    }
+
+    .location-map iframe{
+        height:250px;
+    }
+
+    /* FEEDBACK */
+    .feedback-form{
+        padding:30px 20px;
+    }
+
+    /* IDENTITY */
+    .identity{
+        flex-direction:column;
+        gap:20px;
+    }
+
+}
