@@ -22,7 +22,6 @@
 
     <ul class="nav-links">
         <li><a href="#about">Tentang</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#review">Review</a></li>
         <li><a href="#location">Lokasi</a></li>
     </ul>
@@ -33,7 +32,7 @@
     <div class="hero-text">
         <h1>SISTEM Coffee</h1>
         <p>Ruang hangat untuk cerita, kopi, dan malam yang tenang.</p>
-        <a href="https://wa.me/6281234567890?text=Halo%20SISTEM%20Coffee%20saya%20ingin%20reservasi" class="btn-soft">
+        <a href="https://wa.me/6285782320324?text=Halo%20SISTEM%20Coffee%20saya%20ingin%20reservasi" class="btn-soft">
             Reservasi Sekarang
         </a>
     </div>
@@ -239,6 +238,8 @@ function sendMessage(){
     if(message.includes("jam")) reply = "Kami buka setiap hari mulai pukul 08:00 hingga 00:00.";
     if(message.includes("live")) reply = "Ya, tersedia live music di malam tertentu.";
     if(message.includes("lokasi")) reply = "Kami berada di Jl. Matahari, Pangkep.";
+    if(message.includes("menu")) reply = "Menu kami mencakup kopi, teh, dan makanan ringan.";
+    if(message.includes("music")) reply = "Ya, tersedia live music di malam tertentu.";
 
     setTimeout(()=>{
         chatBody.innerHTML += "<div class='bot'>" + reply + "</div>";

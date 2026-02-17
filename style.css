@@ -533,6 +533,24 @@ footer{
 /* ============================= */
 
 @media (max-width: 768px) {
+        .exp-card {
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .exp-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .exp-card p {
+        font-size: 0.8rem;
+    }
+
+    .exp-icon {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
 
     /* 1. NAVIGASI */
     .navbar {
@@ -597,9 +615,10 @@ footer{
 
     /* 5. EXPERIENCE GRID */
     .experience-grid {
-        grid-template-columns: 1fr; /* 1 Kolom ke bawah */
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
+
 
     /* 6. LOKASI */
     .location-container {
@@ -623,4 +642,11 @@ footer{
         bottom: 20px;
         right: 20px;
     }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px;
 }
